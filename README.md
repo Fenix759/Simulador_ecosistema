@@ -17,5 +17,74 @@ Estas características permiten escribir código más organizado, reutilizable y
 
 3.¿Qué son los modificadores de acceso (public, private, protected)? Ejemplos.
 
+los modififcadores de acceso (como public, private y protected), son palabras clave en la programacion orientada a objetos que controlan la visibilidad y el acceso a miembros de una clase (como variables y metodos).
+
+-PUBLIC permite el acceso desde cualquier lugar
+
+EJEMPLO:
+
+class Persona {
+  public nombre: string;
+
+  constructor(nombre: string) {
+    this.nombre = nombre;
+  }
+}
+
+const p = new Persona("Ana");
+console.log(p.nombre); // ✅ Acceso permitido
+
+-PROTECTED restringe el acceso al paquete y subclases(clases heredadas)
+
+EJEMPO:
+
+class Empleado {
+  protected sueldo: number = 2000;
+
+  mostrarSueldo() {
+    return this.sueldo;
+  }
+}
+
+class Gerente extends Empleado {
+  aumentarSueldo() {
+    this.sueldo += 500; // ✅ Acceso permitido desde clase hija
+  }
+}
+
+const g = new Gerente();
+console.log(g.sueldo); // ❌ Error: 'sueldo' es protegido
+
+-PRIVATE limita el acceso unicamente dentro de la misma clase donde se definen
+
+EJEMPLO:
+
+class Cuenta {
+  private saldo: number = 1000;
+
+  mostrarSaldo() {
+    return this.saldo;
+  }
+}
+
+const c = new Cuenta();
+console.log(c.mostrarSaldo()); // ✅ Válido
+console.log(c.saldo);          // ❌ Error: 'saldo' es privado
+
+4. ¿Qué es un readonly y para qué se usa?
+
+Un redonly es un modificador o atributo que se usa en programacion y diseño web para indicar que un valor, campo o propiedad no puede ser modificado una vez que se le ha asignado un valor inicial. sus usos principales son para asegurar la integridad de los datos (evitando que el usuario o el codigo cambien valores importantes) 
+  - ejemplos y uso
+
+     -Para campos de formulario: El atributo readonly en un elemento <input> o <textarea> hace que el usuario pueda ver el valor pero no lo puede        editar. Se usa para mostrar información que el usuario no debe cambiar, como un número de identificación o un resultado de un cálculo.
+
+     -Control del flujo: Se puede usar con JavaScript para deshabilitar un campo de entrada y luego, tras una acción del usuario (como seleccionar       un    checkbox), eliminar el atributo readonly para hacerlo editable. 
+
+5.¿Cómo se definen clases y objetos en TS?
+
+en typescript una clase es una plantilla o plano para crear objetos, defiendo sus propiedades (variables) y metodos (funciones). un objeto es una instancia concreta 
+
+
+
 
 
