@@ -1,0 +1,17 @@
+{
+  "name": "ecosistema-simulador",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "inquirer": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.9",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.0.0"
+  }
+}
