@@ -199,3 +199,54 @@ En el código se muestran los cuatro pilares de la POO con ejemplos muy cortos. 
 
 
 12. Investigar y realizar la configuración de TypeScript con Node JS y VS Code.
+
+Pasos para configurar TypeScript en Node.js y VS Code
+
+1. Instalar Node.js y npm
+Descarga Node.js desde su página oficial e instala. Verifica en la terminal con:
+
+    node -v
+    npm -v
+
+2. Crear el proyecto
+Abre una carpeta para tu proyecto y desde la terminal escribe:
+
+    mkdir mi-proyecto-ts && cd mi-proyecto-ts
+    npm init -y
+
+3. Instalar TypeScript y herramientas
+
+    npm install -g typescript
+    npm install typescript ts-node --save-dev
+
+
+4. Configurar TypeScript
+Genera el archivo de configuración:
+
+      tsc --init
+
+
+Aquí defines cosas como la carpeta de salida (outDir) y el directorio de tus archivos (rootDir).
+
+5. Configurar VS Code
+
+- Abre el proyecto en VS Code.
+
+- En la carpeta .vscode crea launch.json para depurar.
+
+
+6. Escribir y ejecutar código
+
+- Crea un archivo app.ts.
+
+- Para compilar:
+
+      tsc
+
+
+- Para ejecutar sin compilar:
+
+      npx ts-node src/app.ts
+
+
+Para depurar en VS Code, presiona F5.
