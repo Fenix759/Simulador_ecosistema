@@ -104,7 +104,8 @@ Se usa dentro de los métodos para referirse al objeto específico que se está 
 
 6. ¿Qué son los constructores y para qué sirven?
 
-es como la bienvenida que recibe un objeto cuando nace dentro de un programa. Imagina que cada vez que creas un objeto, este necesita empezar con un nombre, una edad o ciertos datos básicos para poder funcionar; ahí entra el constructor, que se encarga de darle esos valores iniciales. Lo especial es que no tienes que llamarlo de forma manual, ya que se ejecuta automáticamente al crear el objeto. Es como cuando compras un celular nuevo: viene configurado de fábrica para que lo enciendas y ya puedas usarlo, sin tener que armarlo tú. En algunos lenguajes el constructor lleva el mismo nombre de la clase, y en otros, como Python, se llama __init__. Su tarea principal es asegurar que cada objeto comience listo para trabajar, con todo lo necesario desde el primer instante. De esta forma, el constructor nos ahorra pasos, evita errores y organiza mejor el código.
+Un constructor es como la bienvenida que recibe un objeto cuando “nace” dentro de un programa. Cada vez que creas un objeto, este necesita arrancar con algunos datos básicos, como un nombre o una edad, para poder funcionar. Justo ahí entra el constructor: se encarga de darle esos valores iniciales automáticamente.
+En algunos lenguajes el constructor tiene el mismo nombre que la clase, y en otros, como Python, se llama __init__. Su misión es simple: asegurarse de que cada objeto empiece preparado para trabajar, evitando pasos extra, errores y manteniendo todo más organizado desde el inicio.
 
 
 7. ¿Qué es la herencia en TS y cómo se implementa (extends / super)?
